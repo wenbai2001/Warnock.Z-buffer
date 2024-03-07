@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>CG_Proj</class>
+  <widget class="QMainWindow" name="MainWindow">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1078</width>
+        <height>596</height>
+      </rect>
+    </property>
+    <property name="windowTitle">
+      <string>MainWindow</string>
+    </property>
+    <widget class="QWidget" name="centralWidget">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+              <widget class="myWidget" name="widget16" native="true">
+                <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                  </sizepolicy>
+                </property>
+                <property name="cursor">
+                  <cursorShape>ArrowCursor</cursorShape>
+                </property>
+                <property name="mouseTracking">
+                  <bool>true</bool>
+                </property>
+                <property name="acceptDrops">
+                  <bool>false</bool>
+                </property>
+              </widget>
+            </item>
+            <item>
+              <layout class="QVBoxLayout" name="verticalLayout">
+                <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_3">
+                    <item>
+                      <widget class="QToolButton" name="toolButton_zbuffer">
+                        <property name="text">
+                          <string>扫描线zbuffer</string>
+                        </property>
+                      </widget>
+                    </item>
+                    <item>
+                      <widget class="QToolButton" name="toolButton_warnock">
+                        <property name="text">
+                          <string>warnock</string>
+                        </property>
+                      </widget>
+                    </item>
+                  </layout>
+                </item>
+                <item>
+                  <spacer name="verticalSpacer_2">
+                    <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                      <size>
+                        <width>20</width>
+                        <height>40</height>
+                      </size>
+                    </property>
+                  </spacer>
+                </item>
+                <item>
+                  <widget class="QToolButton" name="toolButton_load">
+                    <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                      </sizepolicy>
+                    </property>
+                    <property name="text">
+                      <string>导入模型</string>
+                    </property>
+                  </widget>
+                </item>
+                <item>
+                  <widget class="QToolButton" name="quitButton">
+                    <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                      </sizepolicy>
+                    </property>
+                    <property name="text">
+                      <string>&amp;Quit</string>
+                    </property>
+                  </widget>
+                </item>
+              </layout>
+            </item>
+          </layout>
+        </item>
+      </layout>
+    </widget>
+  </widget>
+  <layoutdefault spacing="6" margin="11"/>
+  <customwidgets>
+    <customwidget>
+      <class>GLWidget</class>
+      <extends>QWidget</extends>
+      <header>myWidget.h</header>
+      <container>1</container>
+    </customwidget>
+  </customwidgets>
+  <resources>
+    <include location="CG_Proj.qrc"/>
+  </resources>
+  <connections/>
+</ui>
